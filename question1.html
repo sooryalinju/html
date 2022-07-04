@@ -5,8 +5,49 @@
     <title> HTML_Q1 </title>
 </head>
 <body>
-    <form>
-        <label> Form </label>
+    <form method="post">
+        <fieldset>
+            <label for="name"> Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name"
+                    maxlength="25" required>
+            <br><br>
+
+            <label for="email"> Email: </label>
+            <input type="text" id="email" name="email" value="test@example.com"
+                    autofocus required>
+            <br><br>
+            
+            <label for="pswrd"> Password: </label>
+            <input type="password" id="pswrd" name="password" min="6" required>
+            <br><br>
+            
+            <label for="category"> Category: </label>
+            <select name="category" required>
+                <option value="student">Student</option>
+                <option value="employee">Employee</option>
+                <option value="freelancer" selected>Freelancer</option>
+            </select> <br><br>
+
+            <label for="date"> Event Date: </label>
+            <input type="date" id="date" required> <br><br>
+            
+            <span required> Tickets: </span>
+            <input type="radio" id="1ticket" name="ticket" value="1 Ticket"> 
+            <label for="1ticket"> 1 Ticket </label>
+            <input type="radio" id="ticket1" name="ticket" value="2 Tickets" checked>
+            <label for="2ticket"> 2 Tickets </label>
+            <input type="radio" id="ticket1" name="ticket" value="3 Tickets">
+            <label for="3ticket"> 3 Tickets </label> <br><br>
+
+            <label for="payment"> Online Payment: </label>
+            <input type="checkbox" id="payment" value="Online Payment" required> <br><br>
+
+            <label for="notes"> Notes: </label>
+            <textarea id="notes" placeholder="Enter your notes here"></textarea>
+
+            <br><br>
+            <input type="submit">
+        </fieldset>
     </form>
 </body>
 </html>
